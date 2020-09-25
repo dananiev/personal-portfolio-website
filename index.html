@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+    <header class='l-header'>
+        <nav class='nav bd-grid'>
+            <div>
+                <a href='#' class='nav__logo'>Deyan Ananiev</a>
+            </div>
+
+            <div class='nav__menu' id='nav-menu'>
+                <ul class='nav__list'>
+                    <li class='nav__item'>
+                        <a href='#home' class='nav__link active'>Home</a>
+                    </li>
+                    <li class='nav__item'>
+                        <a href='#about' class='nav__link'>About</a>
+                    </li>
+                    <li class='nav__item'>
+                        <a href='#skills' class='nav__link'>Skills</a>
+                    </li>
+                    <li class='nav__item'>
+                        <a href='#projects' class='nav__link'>Projects</a>
+                    </li>
+                    <li class='nav__item'>
+                        <a href='#contact' class='nav__link'>Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class='nav__toggle' id='nav-toggle'>
+                <i class='fas fa-bars'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class='l-main'>
+        <!-- HOME -->
+        <section class='home bd-grid' id='home'>
+            <div class='home__data'>
+                <h1 class='home__title'>
+                    Keep calm <br>and <br>let me help you <br>build a great software
+                </h1>
+                <a href='#projects' class='button'>Projects</a>
+            </div>
+
+            <div class='home__social'>
+                <a href='#www.linkedin.com/in/deyan-ananiev' class='home__social-icon'>
+                    <i class='fab fa-linkedin'></i>
+                </a>
+                <a href='#https://github.com/dananiev' class='home__social-icon'>
+                    <i class='fab fa-github'></i>
+                </a>
+            </div>
+
+            <div class='home__img'>
+                <img src='./images/127-1272322_progressive-web-apps-progressive-app-png-transparent-png.png' alt='' />
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class='about section' id='about'>
+            <h2 class='section-title'>About</h2>
+
+            <div class='about__container bd-grid'>
+                <div class='about__img'>
+                    <img src='./images/Capture1.jpg' alt='personal picture' />
+                </div>
+
+                <div>
+                    <h2 class='about__subtitle'>I am Deyan</h2>
+                    <p class='about__text'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Repellat temporibus iusto provident accusantium rerum mollitia maiores deleniti recusandae,
+                        et minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Repellat temporibus iusto provident accusantium rerum mollitia maiores deleniti recusandae,
+                        et minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class='skills section' id='skills'>
+            <h2 class='section-title'>Skills</h2>
+
+            <div class='skills__container bd-grid'>
+                <div>
+                    <h2 class='skills__subtitle'>Professional Skills</h2>
+                    <p class='skills__text'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Officiis inventore mollitia atque animi alias libero eos modi? 
+                        Sed iusto vero maxime porro? 
+                        Numquam neque, adipisci consequuntur perferendis vel distinctio blanditiis?
+                    </p>
+                    <div class='skills__data'>
+                        <div class='skills__names'>
+                            <i class='fab fa-html5 skills__icons'></i>
+                            <span class='skills__name'>HTML5</span>
+                        </div>
+                        <div class='skills__bar skills__html'>
+
+                        </div>
+                        <div>
+                            <span class='skills__percentage'>95%</span>
+                        </div>
+                    </div>
+
+                    <div class='skills__data'>
+                        <div class='skills__names'>
+                            <i class='fab fa-css3 skills__icons'></i>
+                            <span class='skills__name'>CSS3</span>
+                        </div>
+                        <div class='skills__bar skills__css'>
+
+                        </div>
+                        <div>
+                            <span class='skills__percentage'>85%</span>
+                        </div>
+                    </div>
+
+                    <div class='skills__data'>
+                        <div class='skills__names'>
+                            <i class='fab fa-js-square skills__icons'></i>
+                            <span class='skills__name'>JAVASCRIPT</span>
+                        </div>
+                        <div class='skills__bar skills__js'>
+
+                        </div>
+                        <div>
+                            <span class='skills__percentage'>65%</span>
+                        </div>
+                    </div>
+
+                    <div class='skills__data'>
+                        <div class='skills__names'>
+                            <i class='fas fa-paint-brush skills__icons'></i>
+                            <span class='skills__name'>UI/UX</span>
+                        </div>
+                        <div class='skills__bar skills__ux'>
+
+                        </div>
+                        <div>
+                            <span class='skills__percentage'>85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src='./images/pexels-luis-gomes-546819.jpg' alt='' class='skills__img' />
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class='projects section' id='projects'>
+            <h2 class='section-title'>Projects</h2>
+
+            <div class='projects-container bd-grid'>
+                <div class='project__img'>
+                    <a href=''>
+                        <img src='' alt='' />
+                    </a> 
+                </div>
+                <div class='project__img'>
+                    <a href=''>
+                        <img src='' alt='' />
+                    </a> 
+                </div>
+                <div class='project__img'>
+                    <a href=''>
+                        <img src='' alt='' />
+                    </a> 
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id='contact'>
+            <div class='contact container'>
+                <div>
+                    <h1 class='section-title'>Contact <span>info</span></h1>
+                </div>
+                <div class='contact-items'>
+                    <div class='contact-item'>
+                        <div class='icon'>
+                            <i class='fas fa-phone-square skills__icons'></i>
+                        </div>
+                        <div class='contact-info'>
+                            <h1>Phone</h1>
+                            <h2>(00359) 888 434 818</h2>
+                        </div>
+                    </div>
+                    <div class='contact-item'>
+                        <div class='icon'>
+                            <i class='fas fa-envelope-square skills__icons'></i>
+                        </div>
+                        <div class='contact-info'>
+                            <h1>Email</h1>
+                            <h2>deyan.ananiev@gmail.com</h2>
+                        </div>
+                    </div>
+                    <div class='contact-item'>
+                        <div class='icon'>
+                            <i class='fas fa-map-marker-alt skills__icons'></i>
+                        </div>
+                        <div class='contact-info'>
+                            <h1>Address</h1>
+                            <h2>Mladost 4, Sofia, Bulgaria</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class='footer'>
+        <p class='footer__title'>Deyan</p>
+        <div class='footer__social'>
+            <a href='#' class='footer__icon'><i class='fab fa-linkedin'></i></a>
+            <a href='#' class='footer__icon'><i class='fab fa-github'></i></a>
+        </div>
+        <p>&#169; 2020 copyright all right reserved</p>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src='./script.js'></script>
+</body>
+</html>
