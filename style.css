@@ -7,7 +7,8 @@
 
 :root {
     --first-color: #4070F4;
-    --second-color: #0E2431;
+    --second-color: #031f51;
+    /* --second-color: #0E2431; */
 }
 
 :root {
@@ -86,7 +87,7 @@ img {
 .section-title {
     position: relative;
     font-size: var(--normal-font-size);
-    color: var(--first-color);
+    color: var(--second-color);
     margin-top: var(--mb-2);
     margin-bottom: var(--mb-4);
     text-align: center;
@@ -100,8 +101,8 @@ img {
     left: 0;
     right: 0;
     margin: auto;
-    top: 2rem;
-    background-color: var(--first-color);
+    top: 1.8rem;
+    background-color: #ff5f09;
 }
 
 .section {
@@ -179,8 +180,8 @@ img {
     width: 100%;
     height: 0.18rem;
     left: 0;
-    top: 2rem;
-    background-color: var(--first-color);
+    top: 1.8rem;
+    background-color: #ff5f09;
 }
 
 .nav__logo {
@@ -191,6 +192,11 @@ img {
     color: var(--second-color);
     font-size: 1.5rem;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+.nav__toggle:hover {
+    color: #ff5f09;
 }
 
 
@@ -203,8 +209,8 @@ img {
     width: 100%;
     height: 0.18rem;
     left: 0;
-    top: 2rem;
-    background-color: var(--first-color);
+    top: 1.8rem;
+    background-color: #ff5f09;
 }
 
 
@@ -234,9 +240,9 @@ img {
     margin-bottom: var(--mb-5);
 }
 
-/* .home__title-color {
-    color: var(--first-color);
-} */
+.home__title-color {
+    color: #ff5f09;
+}
 
 .home__social {
     display: flex;
@@ -252,7 +258,7 @@ img {
 }
 
 .home__social-icon:hover {
-    color: var(--first-color);
+    color: #4628ff;
 }
 
 .home__img {
@@ -266,19 +272,26 @@ img {
 
 
 /* ----- BUTTONS ----- */
-.button {
+.home__btn {
     display: inline-block;
-    background-color: var(--first-color);
-    color: #fff;
-    padding: .75rem 2.5rem;
+    background-color: #ff5f09;
+    padding: 15px 32px;
     border-radius: .5rem;
-    font-weight: var(--font-semi);
-    text-transform: uppercase;
-    transition: .4s;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-.button:hover {
-    background-color: var(--second-color);
+.home__btn a {
+    color: #fff;
+    font-weight: var(--font-semi);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+}
+
+.home__btn:hover {
+    background-color: #ff4004;
 }
 
 
@@ -341,6 +354,36 @@ img {
     color: var(--first-color);
 }
 
+.skills__icons-contact {
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: #fff;
+}
+
+.skills__icons-html5 {
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: #ff5f09;
+}
+
+.skills__icons-js {
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: #deda43;
+}
+
+.skills__icons-react {
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: #26fafe;
+}
+
+.skills__icons-ui-ux {
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: #031f51;
+}
+
 .skills__names {
     display: flex;
     align-items: center;
@@ -350,10 +393,29 @@ img {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: var(--first-color);
     height: .25rem;
     border-radius: .5rem;
     z-index: var(--z-back);
+}
+
+.skills__bar.html5 {
+    background-color: #ff5f09;
+}
+
+.skills__bar.css3 {
+    background-color: var(--first-color);
+}
+
+.skills__bar.js {
+    background-color: #deda43;
+}
+
+.skills__bar.react {
+    background-color: #26fafe;
+}
+
+.skills__bar.ui-ux {
+    background-color: #031f51;
 }
 
 .skills__html {
@@ -391,6 +453,11 @@ img {
     overflow: hidden;
 }
 
+.project__name {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .project__img img {
     transition: 1s;
     cursor: pointer;
@@ -424,16 +491,17 @@ img {
     padding: 30px;
     margin: 30px;
     display: flex;
+    background-color: var(--second-color);
     justify-content: center;
     align-items: center;
     flex-direction: column;
     box-shadow: 0 0 18px 0 #0000002c;
-    transition: .5s;
+    transition: .4s;
 }
 
 #contact .contact-item:hover {
     box-shadow: 0 0 5px 0 #0000002c;
-    background-color: #0000002c;
+    background-color: #4628ff;
 }
 
 #contact .icon {
@@ -446,12 +514,14 @@ img {
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 #contact .contact-info h2 {
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 2rem;
+    color: #fff;
 }   
 
 
@@ -480,6 +550,11 @@ img {
     font-size: 1.5rem;
     color: #fff;
     margin: 0 var(--mb-2);
+    transition: .4s;
+}
+
+.footer__icon:hover {
+    color: #4628ff;
 }
 
 
@@ -521,6 +596,10 @@ img {
         margin-bottom: 0;
     }
 
+    .nav__toggle {
+        display: none;
+    }
+
     .nav__link {
         color: var(--second-color);
     }
@@ -547,7 +626,7 @@ img {
     }
 
     .home__img {
-        width: 457px;
+        width: 500px;
         bottom: 8%;
     }
 

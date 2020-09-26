@@ -12,6 +12,7 @@ const showMenu = (toggleId, navId) => {
 
 showMenu('nav-toggle', 'nav-menu');
 
+
 // active and remove menu
 const navLink = document.querySelectorAll('.nav__link');
 
@@ -22,7 +23,19 @@ function linkAction() {
     navMenu.classList.remove('show')
 }
 
-navLink.forEach(link => link.addEventListener('click', linkAction))
+navLink.forEach(link => link.addEventListener('click', linkAction));
+
+
+// activate projects nav::after when clicking "projects" button
+const projectsBtn = document.querySelector('.home__btn');
+projectsBtn.addEventListener('click', projectButtonClick);
+const projectsLink = document.getElementById('after');
+
+function projectButtonClick() {
+    navLink.forEach(link => link.classList.remove('active'));
+    projectsLink.classList.add('active');
+}
+
 
 // scroll reveal animation
 const scroll = ScrollReveal({

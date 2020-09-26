@@ -26,7 +26,7 @@
                         <a href='#skills' class='nav__link'>Skills</a>
                     </li>
                     <li class='nav__item'>
-                        <a href='#projects' class='nav__link'>Projects</a>
+                        <a href='#projects' class='nav__link' id='after'>Projects</a>
                     </li>
                     <li class='nav__item'>
                         <a href='#contact' class='nav__link'>Contact</a>
@@ -45,9 +45,11 @@
         <section class='home bd-grid' id='home'>
             <div class='home__data'>
                 <h1 class='home__title'>
-                    Keep calm <br>and <br>let me help you <br>build a great software
+                    Don't wait. <br>The time will <br>never be just right.
                 </h1>
-                <a href='#projects' class='button'>Projects</a>
+                <button class='home__btn'>
+                    <a href='#projects'>Projects</a>
+                </button>
             </div>
 
             <div class='home__social'>
@@ -60,7 +62,7 @@
             </div>
 
             <div class='home__img'>
-                <img src='./images/127-1272322_progressive-web-apps-progressive-app-png-transparent-png.png' alt='' />
+                <img src='./images/home-page-picture.png' alt='' />
             </div>
         </section>
 
@@ -70,18 +72,19 @@
 
             <div class='about__container bd-grid'>
                 <div class='about__img'>
-                    <img src='./images/Capture1.jpg' alt='personal picture' />
+                    <img src='./images/about-me.jpg' alt='personal picture' />
                 </div>
 
                 <div>
-                    <h2 class='about__subtitle'>I am Deyan</h2>
+                    <h2 class='about__subtitle'>My name is Deyan Ananiev,</h2>
                     <p class='about__text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Repellat temporibus iusto provident accusantium rerum mollitia maiores deleniti recusandae,
-                        et minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Repellat temporibus iusto provident accusantium rerum mollitia maiores deleniti recusandae,
-                        et minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        and I am coming from an Automotive Industry,
+                        bringing almost 5 years of experience as a CAD Engineer.
+                        My portfolio is a representation of all that 
+                        I have learned and accomplished after that period as a Front-end student and self-taught programmer.
+                        I love coding and designing websites and applications
+                        because it is good for my mental health and am looking for opportunities
+                        to work and gain professional experience.
                     </p>
                 </div>
             </div>
@@ -95,21 +98,19 @@
                 <div>
                     <h2 class='skills__subtitle'>Professional Skills</h2>
                     <p class='skills__text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Officiis inventore mollitia atque animi alias libero eos modi? 
-                        Sed iusto vero maxime porro? 
-                        Numquam neque, adipisci consequuntur perferendis vel distinctio blanditiis?
+                        I have focusing mainly on learning HTML5, CSS3, JavaScript, React.
+                        Basic knowledge in Figma, Photoshop and Illustrator.
                     </p>
                     <div class='skills__data'>
                         <div class='skills__names'>
-                            <i class='fab fa-html5 skills__icons'></i>
+                            <i class='fab fa-html5 skills__icons-html5'></i>
                             <span class='skills__name'>HTML5</span>
                         </div>
-                        <div class='skills__bar skills__html'>
+                        <div class='skills__bar html5 skills__html'>
 
                         </div>
                         <div>
-                            <span class='skills__percentage'>95%</span>
+                            <span class='skills__percentage'>80%</span>
                         </div>
                     </div>
 
@@ -118,43 +119,56 @@
                             <i class='fab fa-css3 skills__icons'></i>
                             <span class='skills__name'>CSS3</span>
                         </div>
-                        <div class='skills__bar skills__css'>
+                        <div class='skills__bar css3 skills__css'>
 
                         </div>
                         <div>
-                            <span class='skills__percentage'>85%</span>
+                            <span class='skills__percentage'>80%</span>
                         </div>
                     </div>
 
                     <div class='skills__data'>
                         <div class='skills__names'>
-                            <i class='fab fa-js-square skills__icons'></i>
+                            <i class='fab fa-js-square skills__icons-js'></i>
                             <span class='skills__name'>JAVASCRIPT</span>
                         </div>
-                        <div class='skills__bar skills__js'>
+                        <div class='skills__bar js skills__js'>
 
                         </div>
                         <div>
-                            <span class='skills__percentage'>65%</span>
+                            <span class='skills__percentage'>70%</span>
                         </div>
                     </div>
 
                     <div class='skills__data'>
                         <div class='skills__names'>
-                            <i class='fas fa-paint-brush skills__icons'></i>
-                            <span class='skills__name'>UI/UX</span>
+                            <i class='fab fa-react skills__icons-react'></i>
+                            <span class='skills__name'>REACT</span>
                         </div>
-                        <div class='skills__bar skills__ux'>
+                        <div class='skills__bar react skills__js'>
 
                         </div>
                         <div>
-                            <span class='skills__percentage'>85%</span>
+                            <span class='skills__percentage'>60%</span>
+                        </div>
+                    </div>
+
+                    <div class='skills__data'>
+                        <div class='skills__names'>
+                            <i class='fas fa-paint-brush skills__icons-ui-ux'></i>
+                            <span class='skills__name'>UI/UX</span>
+                        </div>
+                        <div class='skills__bar ui-ux skills__ux'>
+
+                        </div>
+                        <div>
+                            <span class='skills__percentage'>50%</span>
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <img src='./images/pexels-luis-gomes-546819.jpg' alt='' class='skills__img' />
+                    <img src='./images/skills.jpg' alt='' class='skills__img' />
                 </div>
             </div>
         </section>
@@ -163,20 +177,53 @@
         <section class='projects section' id='projects'>
             <h2 class='section-title'>Projects</h2>
 
-            <div class='projects-container bd-grid'>
+            <div class='projects__container bd-grid'>
                 <div class='project__img'>
+                    <h1 class='project__name'>Phones E-Commerce</h1>
                     <a href=''>
-                        <img src='' alt='' />
+                        <img src='./images/mobile-phone-e-commerce.jpg' alt='Mobile Phone E-Commerce' />
                     </a> 
                 </div>
                 <div class='project__img'>
+                    <h1 class='project__name'>Music Store</h1>
                     <a href=''>
-                        <img src='' alt='' />
+                        <img src='./images/online-music-store.jpg' alt='Online Music Store' />
                     </a> 
                 </div>
                 <div class='project__img'>
+                    <h1 class='project__name'>Searching Song Lyrics</h1>
                     <a href=''>
-                        <img src='' alt='' />
+                        <img src='./images/song-lyrics.jpg' alt='Song Lyrics' />
+                    </a> 
+                </div>
+                <div class='project__img'>
+                    <h1 class='project__name'>Music Player</h1>
+                    <a href=''>
+                        <img src='./images/music-player.jpg' alt='Music Player' />
+                    </a> 
+                </div>
+                <div class='project__img'>
+                    <h1 class='project__name'>To Do List</h1>
+                    <a href=''>
+                        <img src='./images/to-do-list.jpg' alt='To Do List' />
+                    </a> 
+                </div>
+                <div class='project__img'>
+                    <h1 class='project__name'>Pokemon App</h1>
+                    <a href=''>
+                        <img src='./images/pokemon.jpg' alt='Pokemon' />
+                    </a> 
+                </div>
+                <div class='project__img'>
+                    <h1 class='project__name'>Covid-19 Tracker</h1>
+                    <a href=''>
+                        <img src='./images/covid-19.jpg' alt='Pokemon' />
+                    </a> 
+                </div>
+                <div class='project__img'>
+                    <h1 class='project__name'>Mix and Match Game</h1>
+                    <a href='https://dananiev.github.io/mix-match-game/'>
+                        <img src='./images/mix-match-game.jpg' alt='Pokemon' />
                     </a> 
                 </div>
             </div>
@@ -191,7 +238,7 @@
                 <div class='contact-items'>
                     <div class='contact-item'>
                         <div class='icon'>
-                            <i class='fas fa-phone-square skills__icons'></i>
+                            <i class='fas fa-phone-square skills__icons-contact'></i>
                         </div>
                         <div class='contact-info'>
                             <h1>Phone</h1>
@@ -200,7 +247,7 @@
                     </div>
                     <div class='contact-item'>
                         <div class='icon'>
-                            <i class='fas fa-envelope-square skills__icons'></i>
+                            <i class='fas fa-envelope-square skills__icons-contact'></i>
                         </div>
                         <div class='contact-info'>
                             <h1>Email</h1>
@@ -209,7 +256,7 @@
                     </div>
                     <div class='contact-item'>
                         <div class='icon'>
-                            <i class='fas fa-map-marker-alt skills__icons'></i>
+                            <i class='fas fa-map-marker-alt skills__icons-contact'></i>
                         </div>
                         <div class='contact-info'>
                             <h1>Address</h1>
