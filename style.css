@@ -617,7 +617,7 @@ img {
         padding-top: 0;
         padding-bottom: 2.5rem;
         flex-direction: row;
-        align-self: flex-end;
+        align-self: center;
     }
 
     .home__social-icon {
