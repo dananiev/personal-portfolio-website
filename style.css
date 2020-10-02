@@ -9,7 +9,8 @@
     --first-color: #4070F4;
     --second-color: #061323;
     --third-color: #0dd6ed;
-    --fourth-color: #0a92a1;
+    /* --fourth-color: #0a92a1; */
+    --fourth-color: #10c1d4;
 }
 
 :root {
@@ -293,7 +294,8 @@ img {
 .home__btn {
     display: inline-block;
     /* background-image: linear-gradient(to bottom right, #ff0d00, var(--second-color));  */
-    background-image: linear-gradient(to bottom, var(--fourth-color), var(--second-color));
+    /* background-image: linear-gradient(to bottom, var(--fourth-color), var(--second-color)); */
+    background-color: var(--fourth-color);
     /* padding: 16px 32px; */
     padding: 14px 40px;
     border-radius: .5rem;
@@ -306,7 +308,7 @@ img {
     color: #fff;
     font-weight: var(--font-semi);
     text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 2px;
     font-size: 16px;
 }
 
@@ -493,12 +495,13 @@ img {
 .project__btn__container {
     display: flex;
     justify-content: space-evenly;
-    margin: 15px auto;
+    margin: 20px auto;
 }
 
 .btn__demo {
     /* background-image: linear-gradient(to bottom right, #ff0d00, var(--second-color)); */
-    background-image: linear-gradient(to bottom, var(--fourth-color), var(--second-color)); 
+    /* background-image: linear-gradient(to bottom, var(--fourth-color), var(--second-color)); */
+    background-color: var(--fourth-color); 
     padding: 10px 24px;
     border: none;
     text-decoration: none;
@@ -511,6 +514,7 @@ img {
     letter-spacing: 0.8px;
     font-size: 15px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 /* .btn__demo a {
@@ -527,7 +531,8 @@ img {
 
 .btn__source__code {
     /* background-image: linear-gradient(to bottom right, #ff0d00, var(--second-color)); */
-    background-image: linear-gradient(to bottom, var(--fourth-color), var(--second-color)); 
+    /* background-image: linear-gradient(to bottom, var(--fourth-color), var(--second-color)); */
+    background-color: var(--fourth-color); 
     padding: 10px 24px;
     border: none;
     text-decoration: none;
@@ -540,6 +545,7 @@ img {
     letter-spacing: 0.8px;
     font-size: 15px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 /* .btn__source__code a {
@@ -782,6 +788,26 @@ img {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
+    }
+
+    .project__btn__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project__btn__container a {
+        width: 100%;
+    }
+
+    .btn__demo {
+        width: 100%;
+        margin-bottom: 7.5px;
+    }
+
+    .btn__source__code {
+        width: 100%;
     }
 
     /* CONTACT */
