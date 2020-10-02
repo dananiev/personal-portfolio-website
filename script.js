@@ -29,6 +29,7 @@ navLink.forEach(link => link.addEventListener('click', linkAction));
 // activate projects nav::after when clicking "projects" button
 const projectsBtn = document.querySelector('.home__btn');
 projectsBtn.addEventListener('click', projectButtonClick);
+
 const projectsLink = document.getElementById('after');
 
 function projectButtonClick() {
@@ -37,34 +38,34 @@ function projectButtonClick() {
 }
 
 
-// scroll reveal animation
-const scroll = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-})
+// // scroll reveal animation
+// const scroll = ScrollReveal({
+//     origin: 'top',
+//     distance: '80px',
+//     duration: 2000,
+//     reset: true
+// })
 
 
-// scroll home
-scroll.reveal('.home__title', {});
-scroll.reveal('.button', {delay: 200});
-scroll.reveal('.home__img', {delay: 400});
-scroll.reveal('.home__social-icon', {interval: 200});
+// // scroll home
+// scroll.reveal('.home__title', {});
+// scroll.reveal('.button', {delay: 200});
+// scroll.reveal('.home__img', {delay: 400});
+// scroll.reveal('.home__social-icon', {interval: 200});
 
-// scroll about
-scroll.reveal('.about__img', {});
-scroll.reveal('.about__subtitle', {delay: 400});
-scroll.reveal('.about__text', {delay: 400});
+// // scroll about
+// scroll.reveal('.about__img', {});
+// scroll.reveal('.about__subtitle', {delay: 400});
+// scroll.reveal('.about__text', {delay: 400});
 
-// scroll skills
-scroll.reveal('.skills__subtitle', {})
-scroll.reveal('.skills__text', {})
-scroll.reveal('.skills__data', {interval: 200})
-scroll.reveal('.skills__img', {delay: 600})
+// // scroll skills
+// scroll.reveal('.skills__subtitle', {})
+// scroll.reveal('.skills__text', {})
+// scroll.reveal('.skills__data', {interval: 200})
+// scroll.reveal('.skills__img', {delay: 600})
 
-// scroll projects
-scroll.reveal('.project__img', {interval: 200});
+// // scroll projects
+// scroll.reveal('.project__img', {interval: 200});
 
-// scroll contact
-scroll.reveal('.contact-items', {interval: 200});
+// // scroll contact
+// scroll.reveal('.contact-items', {interval: 200});
