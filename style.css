@@ -685,6 +685,10 @@ img {
         text-align: center;
     }
 
+    .project__btn__container a {
+        width: 100%;
+    }
+
     .btn__demo {
         margin-bottom: 7.5px;
         width: 100%;
