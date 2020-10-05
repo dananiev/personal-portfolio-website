@@ -480,6 +480,7 @@ img {
     box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
     border-radius: .5rem;
     overflow: hidden;
+    padding: 0 16px;
 }
 
 .project__image {
